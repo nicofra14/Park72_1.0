@@ -1,0 +1,153 @@
+/* Estilos para la sección del proyecto con video */
+.project-section {
+  background-color: yellow;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.info-container {
+  
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  flex: 1;
+  max-width: 600px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+    /* Estilo para la sección de la empresa */
+
+.company-section {
+    
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+  
+  /* Estilo para la imagen de la empresa */
+  .img-company img {
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Evita espacios en blanco alrededor de la imagen */
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    border-radius: 5%;
+  }
+  
+  /* Estilo para el contenedor de información en dispositivos móviles */
+  .info-container {
+    max-width: 100%; /* Ancho máximo del contenedor de información */
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: 20px; /* Agrega espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo para el título */
+  .info-container h1 {
+    font-size: 24px;
+    
+  }
+  
+  /* Estilo para el párrafo */
+  .info-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+   .footer-section {
+      background-color: #333;
+      height: 100px;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .social-links {
+      font-size: 24px;
+    }
+
+    .social-link {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .project-section {
+        flex-direction: column;
+    }
+
+    .video-container,
+    .info-container {
+        padding: 10px;
+    }
+
+    /* Estilos para el video responsivo */
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio para video */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+    /* Estilo para la imagen de la empresa en dispositivos móviles */
+.img-company img {
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block; /* Evita espacios en blanco alrededor de la imagen */
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 5%;
+}
+
+
+.info-container {
+  display: block; /* Cambia a un diseño de bloque para que la imagen y el texto sean uno debajo del otro */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+/* Ajusta el estilo del título en dispositivos móviles */
+.info-container h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Ajusta el estilo del párrafo en dispositivos móviles */
+.info-container p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+}
+
